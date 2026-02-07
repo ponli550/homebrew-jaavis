@@ -1,8 +1,8 @@
 class Jaavis < Formula
   desc "One-Army AI Orchestrator & Skill Library"
   homepage "https://github.com/ponli550/JaavisCLI"
-  url "https://github.com/ponli550/JaavisCLI/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "c111d60dbd45992a47d530724653329053cf8a4a2ee47ac813d2d5a43315fdc8"
+  url "https://github.com/ponli550/JaavisCLI/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "5b5667ec375c16676ce25d62ed62f5edc09322767043e51bd2e03c7c1183ee7d"
   license "MIT"
 
   depends_on "python@3.11"
@@ -15,6 +15,8 @@ class Jaavis < Formula
     # Install support files
     pkgshare.install "logo.md"
     pkgshare.install "library"
+    pkgshare.install "jaavis_tui.py"
+    pkgshare.install "jaavis_renderer.py"
   end
 
   def post_install
